@@ -1,13 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <meta http-equiv="X-UA-Compatible" content = "ie=edge">
-        <title> Galeria </title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="shortcut icon" href="lokalizacja ikony">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+        <title> Rzym </title>
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } 
+                else {
+                x.className = "topnav";
+                }
+            }
+        </script>
     </head>
     
     <body>
+        <div id="logo">
+            
+            <a href="index.html"><img id="crest"src="img/crest.png"/></a>
+            <span style="">RZYM</span>
+        </div>
         
+        <div class="topnav" id="myTopnav">
+  <a href="index.html" >Strona główna</a>
+  <a href="history.html">Historia</a>
+  <a href="climate.html">Klimat</a>
+  <a href="gallery.html" class="active">Galeria</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+  
+</div>
+        <div id="container">
+            
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis imperdiet diam. Mauris venenatis risus at lacinia finibus. Praesent imperdiet, magna eu viverra facilisis, velit augue blandit quam, ut bibendum dolor lectus feugiat sapien. Aenean efficitur mi quis metus pretium, non sollicitudin ex consectetur. Vestibulum velit justo, luctus et orci sed, efficitur volutpat neque. Vivamus mollis consequat mauris, et blandit mauris. Fusce molestie fermentum felis nec porttitor. Nunc sit amet leo nulla. Quisque consequat nibh condimentum erat feugiat dictum a eget leo.</p>
+            </div>
+            
+            <div class="content">
+                <p>Donec laoreet libero odio, sit amet auctor tellus convallis eget. Aliquam viverra ex ornare odio fringilla accumsan. Curabitur diam lectus, vulputate non nulla nec, semper rhoncus nisl. Donec ac justo eu velit porta pharetra. Fusce aliquet dui elit, vitae pharetra nulla maximus ut. Aenean nec augue aliquam, posuere orci sed, tempus risus. Vivamus a vulputate mauris. Proin id pellentesque tellus, eu suscipit massa.</p>
+            </div>
+            
+            <div class="content">
+                <p>Quisque euismod posuere est. Morbi mauris mi, molestie at massa ut, dapibus accumsan dolor. Mauris aliquam odio odio, eu vulputate elit egestas a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante diam, pulvinar id leo a, finibus mattis orci. Nam nec gravida mi, ac luctus odio. Donec facilisis orci aliquet augue molestie bibendum. Nam vel diam luctus ex scelerisque facilisis et quis turpis. Sed tempus lectus porttitor, pulvinar augue non, pellentesque odio. Pellentesque posuere metus vel neque tincidunt mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in malesuada nibh. Proin fermentum tellus in dictum pharetra.</p>
+            </div>
+            
+        </div>
+        <div id="footer">
+            Bartosz Jaworski 2ta
+        </div>
     </body>
 </html>
