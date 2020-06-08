@@ -10,6 +10,29 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
         <title> Rzym </title>
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="jquery.scrollTo.min.js"></script>
+        
+        <script>
+            jQuery(
+                function($){
+                    //zresetuj scrolla
+                    $.scrollTo(0);
+                    
+                    $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+                } 
+            );
+            
+            //pokaz podczas przewijania
+            $(window).scroll(
+                function(){
+                    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
+        
         <script>
             function myFunction() {
                 var x = document.getElementById("myTopnav");
@@ -40,17 +63,23 @@
   
 </div>
         <div id="container">
+            <a href="#" class="scrollup"></a>
             
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis imperdiet diam. Mauris venenatis risus at lacinia finibus. Praesent imperdiet, magna eu viverra facilisis, velit augue blandit quam, ut bibendum dolor lectus feugiat sapien. Aenean efficitur mi quis metus pretium, non sollicitudin ex consectetur. Vestibulum velit justo, luctus et orci sed, efficitur volutpat neque. Vivamus mollis consequat mauris, et blandit mauris. Fusce molestie fermentum felis nec porttitor. Nunc sit amet leo nulla. Quisque consequat nibh condimentum erat feugiat dictum a eget leo.</p>
+                <h2>Witaj na mojej stronie!</h2>
+                <p>Chcesz sie dowiedzieć czegoś o Rzymie? Masz zamiar pojechać tam na wakacje? Może chciałbyś/chciałabyś się przeprowadzić? Jeżeli, tak to dobrze trafiłeś/trafiłaś!</p>
             </div>
             
             <div class="content">
-                <p>Donec laoreet libero odio, sit amet auctor tellus convallis eget. Aliquam viverra ex ornare odio fringilla accumsan. Curabitur diam lectus, vulputate non nulla nec, semper rhoncus nisl. Donec ac justo eu velit porta pharetra. Fusce aliquet dui elit, vitae pharetra nulla maximus ut. Aenean nec augue aliquam, posuere orci sed, tempus risus. Vivamus a vulputate mauris. Proin id pellentesque tellus, eu suscipit massa.</p>
+                <h2>Legenda o Romulusie i Remusie</h2>
+                <a href="history.html"><p>Dowiedz się więcej o historii Rzymu!</p>
+                <img class="contentPhoto"src="img/wolf.jpg"/></a>
             </div>
             
             <div class="content">
-                <p>Quisque euismod posuere est. Morbi mauris mi, molestie at massa ut, dapibus accumsan dolor. Mauris aliquam odio odio, eu vulputate elit egestas a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante diam, pulvinar id leo a, finibus mattis orci. Nam nec gravida mi, ac luctus odio. Donec facilisis orci aliquet augue molestie bibendum. Nam vel diam luctus ex scelerisque facilisis et quis turpis. Sed tempus lectus porttitor, pulvinar augue non, pellentesque odio. Pellentesque posuere metus vel neque tincidunt mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in malesuada nibh. Proin fermentum tellus in dictum pharetra.</p>
+                <h2>Rzym w listopadzie</h2>
+                <a href="climate.html"><p style="margin: 0;">Dowiedz się więcej o klimacie Rzymu!</p>
+                <img src="img/rome_climate.jpg"></a>
             </div>
             
         </div>
