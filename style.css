@@ -2,8 +2,8 @@ body{
         background-color: gray;
         margin: 0;
         padding: 0;
-        font-family: 'Roboto Slab', serif;
         overflow: scroll;
+        font-family: 'Inconsolata', monospace;
     }
 p{
     margin: 0;
@@ -50,9 +50,14 @@ p{
         background-color: gray;
         margin: 0;
         padding: 0;
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Inconsolata', monospace;
     }
-
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }    
+    
     #logo{
         text-align: center;
         font-size: 16vw;
@@ -69,7 +74,7 @@ p{
         float: left;
     }
     
-    /*.scrollup{
+    .scrollup{
         width: 64px;
         height: 64px;
         text-decoration: none;
@@ -78,10 +83,11 @@ p{
         right: 50px;
         bottom: 50px;
         display: none;
-    }*/
+    }
     .content{
         background-color: white;
         font-size: 6vw;
+        text-align: center;
     }
     
     .content p{
@@ -90,7 +96,8 @@ p{
     }
     
     .content img{
-        width: 100%;
+        width: 96%;
+        border: 3px double black;
     }
     
     #footer{

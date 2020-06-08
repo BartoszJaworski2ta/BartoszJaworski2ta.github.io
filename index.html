@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css"> 
         <link rel="shortcut icon" href="lokalizacja ikony">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+        
         <title> Rzym </title>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,7 +21,7 @@
                     //zresetuj scrolla
                     $.scrollTo(0);
                     
-                    $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+                    $('.scrollup').click(function() { $.scrollTo($('body'), 700); });
                 } 
             );
             
@@ -32,7 +33,6 @@
                 }
             );
         </script>
-        
         <script>
             function myFunction() {
                 var x = document.getElementById("myTopnav");
@@ -45,12 +45,11 @@
             }
         </script>
     </head>
-    
     <body>
         <div id="logo">
-            
+
             <a href="index.html"><img id="crest"src="img/crest.png"/></a>
-            <span style="">RZYM</span>
+            <span>RZYM</span>
         </div>
         
         <div class="topnav" id="myTopnav">
@@ -66,19 +65,20 @@
             <a href="#" class="scrollup"></a>
             
             <div class="content">
-                <h2>Witaj na mojej stronie!</h2>
-                <p>Chcesz sie dowiedzieć czegoś o Rzymie? Masz zamiar pojechać tam na wakacje? Może chciałbyś/chciałabyś się przeprowadzić? Jeżeli, tak to dobrze trafiłeś/trafiłaś!</p>
+                <a href="gallery.html"><h2>Zobacz galerię!</h2>
+                <img src="img/rome.jpg"/></a>
+                
             </div>
             
             <div class="content">
                 <h2>Legenda o Romulusie i Remusie</h2>
-                <a href="history.html"><p>Dowiedz się więcej o historii Rzymu!</p>
+                <a href="history.html"><p>Więcej o historii Rzymu</p>
                 <img class="contentPhoto"src="img/wolf.jpg"/></a>
             </div>
             
             <div class="content">
                 <h2>Rzym w listopadzie</h2>
-                <a href="climate.html"><p style="margin: 0;">Dowiedz się więcej o klimacie Rzymu!</p>
+                <a href="climate.html"><p style="margin: 0;">Więcej o klimacie Rzymu!</p>
                 <img src="img/rome_climate.jpg"></a>
             </div>
             

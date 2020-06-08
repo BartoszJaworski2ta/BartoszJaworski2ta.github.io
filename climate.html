@@ -4,12 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css"> 
         <link rel="shortcut icon" href="lokalizacja ikony">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+        
         <title> Rzym </title>
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="jquery.scrollTo.min.js"></script>
+        
+        <script>
+            jQuery(
+                function($){
+                    //zresetuj scrolla
+                    $.scrollTo(0);
+                    
+                    $('.scrollup').click(function() { $.scrollTo($('body'), 700); });
+                } 
+            );
+            
+            //pokaz podczas przewijania
+            $(window).scroll(
+                function(){
+                    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
         <script>
             function myFunction() {
                 var x = document.getElementById("myTopnav");
@@ -22,35 +45,36 @@
             }
         </script>
     </head>
-    
     <body>
         <div id="logo">
-            
+
             <a href="index.html"><img id="crest"src="img/crest.png"/></a>
-            <span style="">RZYM</span>
+            <span>RZYM</span>
         </div>
         
         <div class="topnav" id="myTopnav">
-  <a href="index.html" >Strona główna</a>
-  <a href="history.html">Historia</a>
-  <a href="climate.html" class="active">Klimat</a>
-  <a href="gallery.html">Galeria</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i></a>
+            <a href="climate.html" class="active">Klimat</a>
+            <a href="index.html">Strona główna</a>
+            <a href="history.html">Historia</a>
   
-</div>
+            <a href="gallery.html">Galeria</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+  
+        </div>
         <div id="container">
-            
+            <a href="#" class="scrollup"></a>
+              
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis imperdiet diam. Mauris venenatis risus at lacinia finibus. Praesent imperdiet, magna eu viverra facilisis, velit augue blandit quam, ut bibendum dolor lectus feugiat sapien. Aenean efficitur mi quis metus pretium, non sollicitudin ex consectetur. Vestibulum velit justo, luctus et orci sed, efficitur volutpat neque. Vivamus mollis consequat mauris, et blandit mauris. Fusce molestie fermentum felis nec porttitor. Nunc sit amet leo nulla. Quisque consequat nibh condimentum erat feugiat dictum a eget leo.</p>
+                siemka
             </div>
             
             <div class="content">
-                <p>Donec laoreet libero odio, sit amet auctor tellus convallis eget. Aliquam viverra ex ornare odio fringilla accumsan. Curabitur diam lectus, vulputate non nulla nec, semper rhoncus nisl. Donec ac justo eu velit porta pharetra. Fusce aliquet dui elit, vitae pharetra nulla maximus ut. Aenean nec augue aliquam, posuere orci sed, tempus risus. Vivamus a vulputate mauris. Proin id pellentesque tellus, eu suscipit massa.</p>
+                siemka
             </div>
             
             <div class="content">
-                <p>Quisque euismod posuere est. Morbi mauris mi, molestie at massa ut, dapibus accumsan dolor. Mauris aliquam odio odio, eu vulputate elit egestas a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante diam, pulvinar id leo a, finibus mattis orci. Nam nec gravida mi, ac luctus odio. Donec facilisis orci aliquet augue molestie bibendum. Nam vel diam luctus ex scelerisque facilisis et quis turpis. Sed tempus lectus porttitor, pulvinar augue non, pellentesque odio. Pellentesque posuere metus vel neque tincidunt mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque in malesuada nibh. Proin fermentum tellus in dictum pharetra.</p>
+                siemka
             </div>
             
         </div>
