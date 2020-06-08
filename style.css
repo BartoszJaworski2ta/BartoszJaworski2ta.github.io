@@ -59,8 +59,19 @@ p{
     }    
     
     form{
-        font-size: 70%;
+        font-size: 90%;
     }
+    form input{
+        font-size: 180%;
+    }
+    form select{
+        font-size: 110%;
+        
+    }
+    form  span{
+        font-size: 150%;
+    }
+    
     
     #logo{
         text-align: center;
@@ -70,7 +81,7 @@ p{
         font-weight: 700;
         width: 90%;
         padding: 5%;
-        
+        min-height: 10vh;
     }
 
     #crest{
@@ -78,7 +89,7 @@ p{
         float: left;
     }
     
-    /*.scrollup{
+    .scrollup{
         width: 64px;
         height: 64px;
         text-decoration: none;
@@ -86,12 +97,17 @@ p{
         position: fixed;
         right: 50px;
         bottom: 50px;
-        display: none;*/
+        display: none;
+    }
+
+    #container{
+        min-height: 70vh;
     }
     .content{
         background-color: white;
         font-size: 6vw;
         text-align: center;
+        
     }
     
     .content p{
@@ -108,6 +124,7 @@ p{
         font-size: 4vw;
         font-weight: 700;
         text-align: center;
+        height: 5px;
         
     }
     .topnav a:not(:first-child) {display: none;}
