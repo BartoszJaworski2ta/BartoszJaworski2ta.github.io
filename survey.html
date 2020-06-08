@@ -53,11 +53,13 @@
         </div>
         
         <div class="topnav" id="myTopnav">
+            
             <a href="index.html" >Strona główna</a>
             <a href="survey.html">Ankieta</a>
-            <a href="gallery.html" class="active">Galeria</a>
-            <a href="history.html">Historia</a>
+            <a href="gallery.html">Galeria</a>
+            <a href="history.html" class="active">Historia</a>
             <a href="climate.html">Klimat</a>
+            
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i></a>
   
@@ -66,17 +68,17 @@
             <a href="#" class="scrollup"></a>
               
             <div class="content">
-                siemka
-            </div>
-            
-            <div class="content">
-                siemka
-            </div>
-            
-            <div class="content">
-                siemka
-            </div>
-            
+                <form action="mailto:bartosz.jaworski@tm1.edu.pl" method="post">
+                    Czy dowiedziałeś/aś się czegoś o Rzymie?
+                    <select name="pierwszy">
+                        <option>Tak</option>
+                        <option>Nie</option>
+                    </select><br>
+                    Czy podobała Ci się strona?
+                    <input type="radio" name="radio" value="true"/>Tak                    <input type="radio" name="radio" value="false"/>Nie<br>
+                    <input type="submit" value="Wyślij"/>
+                </form>
+            </div>  
         </div>
         <div id="footer">
             Bartosz Jaworski 2ta
