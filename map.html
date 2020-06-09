@@ -12,7 +12,8 @@
         <title> Rzym </title>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChWndILpf3mikf6bJDJ2WJA5hZ0AN-9_0&callback=initMap"
+        type="text/javascript"></script>
         <script src="jquery.scrollTo.min.js"></script>
         
         <script>
@@ -67,8 +68,34 @@
             <a href="#" class="scrollup"></a>
               
             <div class="content">
-                <iframe src="https://www.google.com/">
-                    <a href="#">siema</a>
+                <h3>spis treści</h3>
+                <ul>
+                    <a href="#italy"><li>Mapa włoch</li></a>
+                    <a href="#tour"><li>Mapa turystyczna Rzymu</li></a>
+                    <a href="#metro"><li>Mapa metra rzymskiego</li></a>
+                </ul>
+                
+                <h2 id="italy">Mapa Włoch</h2>
+                <iframe src="img/map.jpg">  
+                </iframe>
+                <h2 id="tour">Mapa turystyczna Rzymu</h2>
+                <iframe src="img/map_tour.png">  
+                </iframe>
+                
+                <ol>
+                    <li>Fontanna di Trevi</li>
+                    <li>Koloseum</li>
+                    <li>Panteon w Rzymie</li>
+                    <li>Forum Romanum</li>
+                    <li>Piazza Navona</li>
+                    <li>Schody Hiszpańskie</li>
+                    <li>Palatyn</li>
+                    <li>Zamęk Świętego Anioła</li>
+                    <li>Fontanna Czterech Rzek</li>
+                    <li>Piazza del Popolo</li>
+                </ol>
+                <h2 id="metro">Mapa metra rzymskiego</h2>
+                <iframe src="img/map_metro.png">  
                 </iframe>
             </div>        
         </div>

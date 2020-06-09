@@ -47,7 +47,7 @@ p{
 /*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SM*/
 @media screen and (max-width: 600px){
     body{
-        background-color: gray;
+        background-color: #333;
         margin: 0;
         padding: 0;
         font-family: 'Inconsolata', monospace;
@@ -83,6 +83,7 @@ p{
         width: 90%;
         padding: 5%;
         letter-spacing: 5vw;
+        min-height: 15vh;
     }
 
     #crest{
@@ -103,13 +104,11 @@ p{
     #container{
         min-height: 100%;
         position: relative;
-        min-height: 90vh;
     }
     .content{
         background-color: white;
         font-size: 6vw;
         text-align: center;
-        min-height: 90vh;
     }
     
     .content p{
@@ -123,17 +122,27 @@ p{
         min-width: 100px;
     }
     
+    .content h2{
+        margin: 1vh 3vw 1vh 3vw;
+        padding: 2vh;
+    }
+    
+    #firstHeading{
+        margin-top: 0;
+    }
+    
     .gallery{
         text-align: center;
-        margin-top: 15px;
-        min-height: 100vh;
-        
+        padding-top: 15px;
+        background-color: gray;
+        min-height: 70vh;
     }
     
     .gallery img{
         max-width: 40vw;
         border: 3px double white;
-        
+        margin-top: 2vh;
+        margin-bottom: 2vh;
     }
     
     .gallery img:hover{
@@ -141,11 +150,34 @@ p{
         transform: scale(1.1);
     }
     
+    iframe{
+        width: 90%;
+        height: 70vh;
+        margin-top: 2vh;
+    }
+    
+    ol{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 6vw;
+    }
+    
+    ul {
+        list-style-type: square;
+    }
+    
+    
+    ul a{
+        color: black;
+        text-decoration: underline;
+    }
+    
     #footer{
         font-size: 3vw;
         font-weight: 700;
         text-align: center;
         width: 100%;
+        background-color: #333;
         
     }
     .topnav a:not(:first-child) {display: none;}
