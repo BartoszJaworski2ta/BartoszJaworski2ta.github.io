@@ -76,18 +76,17 @@ p{
     
     #logo{
         text-align: center;
-        font-size: 16vw;
+        font-size: 20vw;
         background-color: white;
         float: left;
         font-weight: 700;
         width: 90%;
         padding: 5%;
-        min-height: 10vh;
+        letter-spacing: 5vw;
     }
 
     #crest{
         width: 12vw;
-        float: left;
     }
     
     /*.scrollup{
@@ -102,7 +101,9 @@ p{
     }*/
 
     #container{
-        
+        min-height: 100%;
+        position: relative;
+        min-height: 70vh;
     }
     .content{
         background-color: white;
@@ -140,10 +141,11 @@ p{
     }
     
     #footer{
-        font-size: 13px;
+        font-size: 3vw;
         font-weight: 700;
         text-align: center;
-        max-height: 5px;
+        width: 100%;
+        
     }
     .topnav a:not(:first-child) {display: none;}
       
