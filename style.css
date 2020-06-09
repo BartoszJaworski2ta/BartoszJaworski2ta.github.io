@@ -44,7 +44,7 @@ p{
       display: none;
 }
 
-/*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*/
+/*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SMARTPHONE*//*SM*/
 @media screen and (max-width: 600px){
     body{
         background-color: gray;
@@ -61,6 +61,7 @@ p{
     
     form{
         font-size: 90%;
+        min-height: 100vh;
     }
     form input{
         font-size: 100%;
@@ -72,7 +73,6 @@ p{
     form  span{
         font-size: 150%;
     }
-    
     
     #logo{
         text-align: center;
@@ -103,13 +103,13 @@ p{
     #container{
         min-height: 100%;
         position: relative;
-        min-height: 70vh;
+        min-height: 90vh;
     }
     .content{
         background-color: white;
         font-size: 6vw;
         text-align: center;
-        
+        min-height: 90vh;
     }
     
     .content p{
@@ -126,6 +126,7 @@ p{
     .gallery{
         text-align: center;
         margin-top: 15px;
+        min-height: 100vh;
         
     }
     
