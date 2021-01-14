@@ -134,21 +134,21 @@ footer{
 @media screen and (max-width: 600px) {
     
     #main{
-        font-size: 64%;
+        font-size: 4vw;
     }
     
     nav a:not(:first-child) {display: none;}
     nav a.icon {
         float: right;
         display: block;
-        font-size: 60%;
+        font-size: 3.85vw;
     }
     nav.responsive {position: relative;}
     nav.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
-        font-size: 60%;
+        font-size: 3.85vw;
     }
     nav.responsive a {
         float: none;
