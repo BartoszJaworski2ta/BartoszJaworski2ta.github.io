@@ -83,7 +83,7 @@ nav .icon {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    background-color: dimgray;
+    background-color: darkgray;
     margin-top: 2vh;
     padding: 3%;
 }
@@ -183,7 +183,8 @@ footer{
     }
     
     #tarrif{
-    max-width: 100%;
+    max-width: 97%;
+    border: 2px solid black;
 }
 }
 /*------------------TABLET---------------------
