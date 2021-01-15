@@ -109,12 +109,6 @@ nav .icon {
     transform: scale(1.15);
 }
 
-
-
-iframe{
-    float: left;
-}
-
 footer{
     font-size: 1vh;
     background-color: #222;
@@ -124,6 +118,52 @@ footer{
 
  /*When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon)
  The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally)*/
+
+
+/*------------------TABLET---------------------*/
+
+@media screen and (max-width: 1000px) {
+    header{
+        font-size: 50px;
+        padding-top: 3%;
+    }
+    header h1{
+        padding-top: 3%;
+    }
+    
+    header img{
+        padding-bottom: 3%;
+        max-width: 200px;
+    }
+    nav a{
+        font-size: 2.5vw;
+    }
+    #tel, #mail{
+        display: none;
+    }
+    iframe{
+        width: 90vw;
+        min-height: 40vh;
+        padding: 2vh 5vw;
+        background-color: gray;
+    }
+    .container{
+        width: 100%;
+        padding: 6% 0;
+        margin: 0;
+        font-size: 3vw;
+    }
+    #contactArt{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 3vh;
+        background-color: darkgray;
+    }
+    #tarrif{
+    max-width: 95%;
+    border: 1px solid black;
+    }
+}
 
 /*------------------MOBILE----------------*/
 
@@ -135,10 +175,12 @@ footer{
     }
     header h1{
         padding-top: 3%;
+        font-size: 8vw;
     }
     
     header img{
         padding-bottom: 3%;
+        max-width: 40%;
     }
     
     .container{
@@ -146,6 +188,10 @@ footer{
         padding: 10% 0;
         margin: 0;
         font-size: 3vh;
+    }
+    
+    .container p{
+        margin: 0 6%;
     }
     
     nav a{
@@ -174,36 +220,27 @@ footer{
         font-size: 50%;
     }
     
-    #mail ,#tel{
-        display: none;
-    }
     nav.responsive #mail, nav.responsive #tel{
-        display: block;
+        display: none;
         font-size: 50%;       
     }
     
     #tarrif{
-    max-width: 97%;
-    border: 2px solid black;
-}
-}
-/*------------------TABLET---------------------
-
-@media screen and (max-width: 1000px) {
-    header{
-        font-size: 8vw;
+    max-width: 95%;
+    border: 1px solid black;
+    }
+    iframe{
+        float: left;
+        width: 84vw;
+        min-height: 40vh;
+        padding: 8vw;
+        background-color: gray;
     }
     
-    header img{
-        margin-bottom: 3vh;
-    }
-    
-    nav a{
-        font-size: 3vw;
-    }
-    
-    #mail, #tel{
-        display: none;
+    #contactArt{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 3vh;
+        background-color: darkgray;
     }
 }
-*/
