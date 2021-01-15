@@ -11,3 +11,4 @@
 [0108/121325.950:ERROR:exception_snapshot_win.cc(99)] thread ID 26716 not found in process
 [0108/121325.950:ERROR:exception_snapshot_win.cc(99)] thread ID 20172 not found in process
 [0115/161015.582:ERROR:directory_reader_win.cc(43)] FindFirstFile: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
+[0115/184637.253:ERROR:directory_reader_win.cc(43)] FindFirstFile: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
